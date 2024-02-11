@@ -9,7 +9,19 @@ import SwiftUI
 
 struct _7_GroupBootcamp: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 50) {
+            Text("Hello, world!")
+            
+            Group {
+                Text("Hello, world!")
+                Text("Hello, world!")
+            }
+            
+            .font(.caption)
+            .foregroundColor(.green)
+        }
+        .foregroundColor(.red)
+        .font(.headline)
     }
 }
 

@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct _2_SubmitTextFieldBootcamp: View {
+    
+    @State private var text: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField("Placeholder...", text: $text)
+                .submitLabel(.route)
+                .onSubmit {
+                    print("Something to the console!")
+                    
+            TextField("Placeholder...", text: $text)
+                        .submitLabel(.next)
+                        .onSubmit {
+                            print("Something to the console!")
+                        }
+                    
+            TextField("Placeholder...", text: $text)
+                        .submitLabel(.search)
+                        .onSubmit {
+                            print("Something to the console!")
+                        }
+                }
+        }
     }
 }
 

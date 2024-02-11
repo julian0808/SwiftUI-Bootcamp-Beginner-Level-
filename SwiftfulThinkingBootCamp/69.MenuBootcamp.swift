@@ -9,7 +9,20 @@ import SwiftUI
 
 struct _9_MenuBootcamp: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Menu("Click men!") {
+            Button("One") {
+                
+            }
+            Button("Two") {
+                
+            }
+            Button("Three") {
+                
+            }
+            Button("Four") {
+                
+            }
+        }
     }
 }
 
